@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hello_reactangle/category.dart';
+import 'package:hello_reactangle/category_route.dart';
 
 const _categoryName = 'Cake';
 const _categoryIcon = Icons.cake;
@@ -20,11 +20,7 @@ class MyApp extends StatelessWidget {
           title: Text('Hello Rectangle'),
         ),
         body: Center(
-          child: Category(
-          name: _categoryName,
-          color: _categoryColor,
-          iconLocation: _categoryIcon,
-        ),
+          child: CategoryRoute(),
         )
       ),
     );
